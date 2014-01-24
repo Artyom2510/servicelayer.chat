@@ -1,0 +1,30 @@
+﻿
+
+
+<footer>
+    <p>
+        <nav role="navigation" class="navbar navbar-inverse navbar-fixed-bottom" data-toggle="chat-window-open">
+            <input type="hidden" id="username" value="@User.Identity.Name" />
+            <div id="chat-with-christian" class="chat-window-open">
+                @Html.Partial("Chat/_Header")
+                <div class="chat-roll">
+                    @Html.Partial("Chat/_Item")
+                </div>
+                @Html.Partial("Chat/_Footer")
+            </div>
+        </nav>
+    </p>
+</footer>
+
+<script type="text/x-render" id="chatItemStartTemplate">
+    <ul>
+        <li>
+            <img src="/content/images/christian-schiffer.png" alt="Christian Schiffer" />
+            <b>{{:user}} says:</b> {{:chat}}
+        </li>
+    </ul>
+</script>
+<script type="text/x-render" id="chatItemTemplate">
+    <br /> {{:chat}}
+</script>
+

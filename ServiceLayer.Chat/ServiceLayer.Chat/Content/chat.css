@@ -1,0 +1,127 @@
+﻿
+.chat-window-open {
+    border-style: solid;
+    border-bottom-style: none;
+    position: absolute;
+    z-index: 100;
+    width: 360px;
+    height: 480px;
+    background-color: rgb(255, 255, 255);
+    right: 20px;
+    bottom: 50px;
+}
+
+    .chat-window-open .chat-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 99px;
+        padding-left: 6px;
+        background: rgb(230, 230, 230);
+        display: block;
+    }
+
+    .chat-window-open textarea {
+        position: absolute;
+        bottom: 4px;
+        left: 3px;
+        max-width: 340px;
+        border: solid;
+        border-color: rgb(150, 150, 150);
+        height: 70px;
+        margin: 4px;
+        border-radius: 6px;
+    }
+
+    .chat-window-open .chat-roll {
+        width: 100%;
+        max-height: 327px;
+        position: absolute;
+        padding: 4px 2px 210px 8px;
+        overflow-y: auto;
+        top: 51px;
+        vertical-align: bottom;
+    }
+        .chat-window-open .chat-roll img {
+            width: 70px;
+            background-color: white;
+            float: left;
+            margin: 2px 6px 1px 0;
+            border-radius: 5px;
+        }
+
+.chat-window-closed {
+    border-style: solid;
+    border-bottom-style: none;
+    position: absolute;
+    z-index: 100;
+    width: 360px;
+    height: 50px;
+    right: 20px;
+    bottom: 50px;
+}
+
+    .chat-window-closed .chat-footer {
+        display: none;
+    }
+
+    .chat-window-closed .chat-roll {
+        display: none;
+    }
+    .chat-window-closed .navbar-header .chat-head-button {
+        display: none !important;
+    }
+
+
+
+.chat-userlist-image {
+    width: 100%;
+}
+
+.chat-head-button {
+    display: block !important;
+    right: 0;
+    position: absolute;
+}
+
+.chat-head-menu .collapse {
+    display: none !important;
+}
+
+.chat-head-menu:not(.in) {
+    height: auto;
+    width: auto;
+}
+
+.chat-nav-list {
+    padding-right: 158px;
+}
+/*.chat-nav-list p {
+    position: absolute;
+    bottom: 70px;
+    z-index: 2000;
+}*/
+
+.chat-items :nth-child(even):not(li):not(img) {
+    background: rgb(171, 181, 181);
+}
+
+
+.chat-items ul {
+    background: rgb(200, 200, 200);
+    margin-right: 4px;
+    margin-right: 6px;
+    list-style-type: none;
+    padding: 4px 4px 4px 6px;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 4px;
+}
+
+.chat-items li {
+    min-height: 75px;
+}
+
+.top-nav {
+    position: inherit;
+}

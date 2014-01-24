@@ -1,0 +1,24 @@
+﻿
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div id="chat-with-christian-header" class="container chat-head-menu">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle chat-head-button" data-toggle="collapse" data-target="#chat-with-someone-menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="container pull-left" >
+                @Html.ActionLink("Chat with Christian Schiffer", "Index", "Home", null, new { @class = "navbar-brand" })
+            </div>
+        </div>
+        <div id="chat-with-someone-menu" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav chat-nav-list">
+                <li>@Html.ActionLink("Invite others", "Index", "Home")</li>
+                <li>@Html.ActionLink("Block User", "About", "Home")</li>
+                <li>@Html.ActionLink("Open full Chat", "Contact", "Home")</li>
+                <li>@Html.ActionLink("Exit", "Index", "Home")</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
