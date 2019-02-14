@@ -2,7 +2,7 @@
 /*
 Jquery Plugin pluginTemplate 2.0
 Copyright (c) 2014 ServiceLayer
-pluginTemplate is released under the MIT License
+pluginTemplate is released under the DWTFYWT License
 http://www.servicelayer.no
 */
 /*
